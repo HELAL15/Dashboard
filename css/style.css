@@ -188,18 +188,21 @@ color: var(--dark-black-color);
 
 
 @media (max-width: 425px){
-
+  .select-user h1.logo{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.select-user .kind-user a.btn{
+  font-size: 24px;
+  padding: 1rem 2.5rem;
+}
+.login-beneficiary h2.logo {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
   .login-beneficiary .container{
     width: 90%;
     height: auto;
-    border-radius: 44px;
-    background-color: var(--white-color);
-    box-shadow: var(--box-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    direction: rtl;
   }
   .login-beneficiary .container .row{
     width: 100%;
@@ -211,7 +214,7 @@ color: var(--dark-black-color);
     width: 100%;
 }
   .profile-photo {
-    height: 350px;
+    height: 335px;
     margin-bottom: 1rem;
 }
 

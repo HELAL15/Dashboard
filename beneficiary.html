@@ -31,18 +31,42 @@
 <body>
 
 
-  <section class="login-dashboard">
-    <div class="select-user">
-      <h1 class="logo">dashboard</h1>
-      <div class="kind-user d-flex justify-content-center align-items-center flex-column gap-3">
-        <a href="beneficiary.html" class="btn btn-dark">دخول كمستفيد</a>
-        <a href="association.html" class="btn btn-dark">دخول كجمعية</a>
-        <a href="partenr.html" class="btn btn-dark">دخول كشريك</a>
+  <section class="login-beneficiary">
+    <div class="container">
+      <div class="row  justify-content-between align-items-center  gy-4">
+        <div class="col-lg-6 align-items-center">
+          <div class="details">
+            <h2 class="logo">logo</h2>
+            <form action="">
+              <div class="all">
+                <label for="phone" class="form-label">رقم الجوال</label>
+                <div class="input-group ">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="number" class="form-control" id="phone" aria-label="phoneNumber"
+                    aria-describedby="addon-wrapping">
+                </div>
+              </div>
+              <div class="all">
+                <label for="pass" class="form-label">الرقم السري</label>
+                <div class="input-group ">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="password" class="form-control" id="pass" aria-label="password"
+                    aria-describedby="addon-wrapping">
+                </div>
+              </div>
+              <a href="#" class="btn btn-dark form-submit my-3">تسجيل الدخول</a>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <div class="profile-photo " id="profile-photo">
+            <img src="images/user.png" alt="" id="photo">
+            <input type="file" class="" accept="image/*" id="file">
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-
 
 
 

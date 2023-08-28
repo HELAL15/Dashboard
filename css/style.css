@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: tajawal;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 :root{
@@ -79,11 +79,18 @@ section.login-beneficiary{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   direction: rtl;
 }
 .login-beneficiary .container .row{
   width: 95%;
+}
+.login-beneficiary .details .registration {
+  color: var(--grey-color);
+  font-size: 20px;
+}
+.login-beneficiary .details .registration a{
+  color: var(--dark-grey-color);
+  font-size: 20px;
 }
 .login-beneficiary .all{
   margin: 2rem 0;
@@ -155,10 +162,66 @@ color: var(--dark-black-color);
   cursor: pointer;
   border-radius: 29px;
 }
-
-
-
-
+/*==================================*/
+.sign-up{
+  display: flex;
+  justify-content: center;
+}
+.sign-up .container{
+  width: 90%;
+  border-radius: 44px;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  margin: 3rem 0;
+}
+.sign-up .container .row{
+  width: 95%;
+}
+.sign-up h2.logo{
+  color: var(--dark-grey-color);
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+.sign-up .all{
+  margin: 1rem 0;
+}
+.sign-up .all label{
+font-size: 20px;
+color: var(--dark-black-color);
+}
+.sign-up .input-group{
+  width: 80%;
+}
+.sign-up a.btn{
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  padding: .6rem 3.5rem;
+  border-radius: 35px;
+  transition: .3s;
+  background-color: var(--dark-black-color);
+  color: var(--white-color);
+  margin: 1rem 0 0 0 ;
+}
+.sign-up a.btn:hover{
+  background-color: var(--btn-back);
+  color: var(--dark-black-color);
+}
+.sign-up .details .registration {
+  color: var(--grey-color);
+  font-size: 20px;
+  margin: .5rem 0 2rem 0;
+}
+.sign-up .details .registration a{
+  color: var(--dark-grey-color);
+  font-size: 20px;
+}
 
 
 
@@ -179,7 +242,26 @@ color: var(--dark-black-color);
 
 /*media query*/
 
+@media (max-width: 768px){
 
+.login-beneficiary .input-group{
+  width: unset !important;
+}
+
+.login-beneficiary .container .row{
+  width: unset !important;
+}
+.login-beneficiary .container{
+  width: 90%;
+  height: 90vh;
+}
+.profile-photo {
+  height: 335px;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+}
 
 
 
@@ -217,5 +299,10 @@ color: var(--dark-black-color);
     height: 335px;
     margin-bottom: 1rem;
 }
-
+.for-photo{
+  justify-content: center !important;
+}
+.sign-up .input-group{
+  width: 100%;
+}
 }

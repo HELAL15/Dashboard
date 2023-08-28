@@ -83,6 +83,7 @@ section.login-beneficiary{
 }
 .login-beneficiary .container .row{
   width: 95%;
+  /* margin: 3rem 0; */
 }
 .login-beneficiary .details .registration {
   color: var(--grey-color);
@@ -163,8 +164,7 @@ color: var(--dark-black-color);
   border-radius: 29px;
 }
 /*==================================*/
-.sign-up , 
-.login-beneficiary{
+.sign-up{
   display: flex;
   justify-content: center;
 }
@@ -287,7 +287,7 @@ color: var(--dark-black-color);
   .login-beneficiary .container{
     width: 90%;
     height: auto !important;
-    margin: 3rem 0;
+    /* margin: 3rem 0; */
   }
   .login-beneficiary .container .row{
     width: 100%;

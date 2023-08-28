@@ -163,7 +163,8 @@ color: var(--dark-black-color);
   border-radius: 29px;
 }
 /*==================================*/
-.sign-up{
+.sign-up , 
+.login-beneficiary{
   display: flex;
   justify-content: center;
 }
@@ -280,11 +281,12 @@ color: var(--dark-black-color);
 }
 .login-beneficiary h2.logo {
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
   .login-beneficiary .container{
     width: 90%;
     height: auto;
+    margin: 3rem 0;
   }
   .login-beneficiary .container .row{
     width: 100%;

@@ -16,3 +16,36 @@ if( file !=null){
     }
   }
 }
+
+
+
+const showContent = document.getElementById('show-content');
+
+if(showContent != null){
+  showContent.addEventListener('click' , ()=>{
+    let hideContent = document.querySelector('.content');
+    let down_up = document.getElementById('down-up');
+    console.log('clicked');
+    hideContent.classList.toggle('d-none');
+    down_up.classList.toggle('fa-caret-down');
+    down_up.classList.toggle('fa-caret-up');
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

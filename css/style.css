@@ -233,21 +233,20 @@ body.dashboard{
 nav{
   background-color: var(--white-color);
   box-shadow: 0px 2px 6px #0000000A;
-  position: fixed !important;
-  top: 0;left: 0;
-  z-index: 999;
-  width: 100%;
 }
-
+.navbar-toggler {
+  width: 60px;
+  height: 40px;
+}
 .navbar-brand{
   font-size: 2rem;
   font-weight: bold;
   color: var(--dark-grey-color);
 }
-.navbar form{
+.navbar .all-cont form{
   width: 35%;
 }
-.navbar form input{
+.navbar .all-cont form input{
   border: none;
   border-radius: 24px;
   background-color: var(--btn-back);
@@ -257,7 +256,7 @@ nav{
   margin: 0 1rem;
   transition: .3s;
 }
-.navbar form.form-control{
+.navbar .all-cont form.form-control{
   border: none;
   border-radius: 24px;
   background-color: var(--btn-back);
@@ -277,9 +276,9 @@ nav{
   cursor: pointer;
 }
 /*==============================================================*/
-section.main {
+/* section.main {
   margin: 4.6rem 0 0 0 ;
-}
+} */
 .container-fluid {
   padding-right: unset !important;
 }
@@ -288,24 +287,25 @@ section.main .controls{
   box-shadow: 0px 2px 0px #0000000A;
   z-index: 2;
   width: 100% !important;
-  height: 89.7vh;
+  height: 100%;
+  min-height: calc(100vh - 74px);
 }
 section.main .controls .nav{
   z-index: 2;
   width: 100%;
 }
-section.main .controls .nav button{
+section.main .controls .nav a {
   border: none;
   border-radius: 0 !important;
   color: var(--dark-grey-color);
   font-size: 18px;
   font-weight: 500;
-  padding: .5rem 2rem;
+  padding: 0.6rem 1rem 0.6rem 0;
   transition: .3s;
   text-align: right;
-
+  margin: 0rem 0 0.5rem 0;
 }
-section.main .controls .nav button i{
+section.main .controls .nav a i{
   margin-left: .7rem;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -315,62 +315,99 @@ section.main .controls .nav button i{
   /* padding: 0.5rem 6.6rem; */
 }
 
-.main .tab-content {
-  margin: 2rem 3rem 0 3rem !important;
+.main .content {
+  margin: 1rem 2rem 0 2rem !important;
 }
-.main .tab-content .static-title{
+.main .content .static-title{
   align-items: center;
   margin-bottom: 1.5rem;
 }
-.main .tab-content .static-title h3{
+.main .content .static-title h3{
   font-size: 24px;
   font-weight: bold;
   color: var(--dark-grey-color);
 }
-.main .tab-content .static-title .img{
-  width: 40px;
-  height: 40px;
+.main .content .static-title .img{
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: .8rem;
   object-fit: cover;
   border-radius: 29px;
   background-color: var(--btn-back);
 }
-.main .tab-content .static-title .img img{
+.dropdown-toggle::after {
+  position: absolute;
+  left: .1rem;
+  top: 50%;
+  content: "";
+  border-top: 0.4em solid var(--dark-grey-color);
+  border-right: 0.4em solid transparent;
+  border-bottom: 0 var(--dark-grey-color);
+  border-left: 0.4em solid transparent;
+}
+.dropdown .btn-files{
+  background-color: transparent;
+  border: none;
+}
+.dropdown .btn-files:active{
+  background-color: transparent;
+  border: none;
+}
+.dropdown .btn-files:hover{
+  background-color: transparent;
+  border: none;
+}
+.dropdown .dropdown-menu button{
+  position: relative;
+}
+.dropdown .dropdown-menu button input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 29px;
+}
+.main .content .static-title .img img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 29px;
 }
-.main .tab-content .report{
+.main .content .report{
   /* margin: 2rem 0; */
   background-color: var(--white-color);
   box-shadow: 0px 2px 6px #0000000A;
   padding: 1rem;
 }
-.main .tab-content .report .report-header h4{
+.main .content .report .report-header h4{
   font-size: 18px;
   font-weight: bold;
   color: var(--dark-grey-color);
 }
-.main .tab-content .report .report-header .form-select{
+.main .content .report .report-header .form-select{
   width: 10%;
 }
-.main .tab-content .all-for-table,
-.main .tab-content .all-for-details{
+.main .content .all-for-table,
+.main .content .all-for-details{
   background-color: var(--white-color);
   padding: 1rem;
+  height: 100%;
   box-shadow: 0px 2px 6px #0000000A;
 }
-.main .tab-content  .header ,
-.main .tab-content  .header{
+.main .content  .header ,
+.main .content  .header{
   font-size: 18px;
   color: var(--dark-grey-color);
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.main .tab-content   p{
+.main .content   p{
   font-size: 18px;
   color: var(--grey-color);
   font-weight: 500;
@@ -396,47 +433,156 @@ section.main .controls .nav button i{
   font-size: 18px;
 }
 
-.main .tab-content .all-for-details .assoc-names{
+.main .all-for-details .assoc-names{
   margin-top: 1rem;
 }
-.main .tab-content .all-for-details .assoc-names li{
+.main .all-for-details .assoc-names li{
   margin: .7rem 0;
   color: var(--grey-color);
 }
 
-.box-services2{
+.main .nav-search .content form{
+  width: 100%;
   display: none !important;
-  border: none !important;
-  /* display: flex !important; */
-  display: none;
 }
-  .box-services2 .btn-content{
-  background-color: var(--white-color) !important;
-  border: none;outline: none;
+.content form input{
+  border: none;
+  border-radius: 24px;
+  background-color: var(--btn-back);
+  color: var(--dark-grey-color);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: .3s;
+}
+.content form.form-control{
+  border: none;
+  border-radius: 24px;
+  background-color: var(--btn-back);
+  color: var(--dark-grey-color);
+  font-size: 18px;
+  font-weight: 500;
+  transition: .3s;
+  /* margin-right: 6rem; */
+}
+.form-control:focus {
+  border-color: none;
+  box-shadow: unset;
+}
+.icons i{
+  font-size: 1.4rem;
+  color: var(--grey-color);
+  cursor: pointer;
+}
+
+
+/*=================================*/
+.contact{
+  margin-top: 5rem;
+}
+.contact .img{
+  width: 100%;
+  height: 310px;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: .8rem;
+  object-fit: cover;
   border-radius: 29px;
+  background-color: var(--btn-back);
 }
-  .box-services2 .btn-content h3{
+.contact .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact .all-input{
+  padding-right: 1rem;
+  width: 75%;
+  height: 90px;
+  background-color: var(--white-color);
+}
+
+.contact .all-input .icon-contact{
+  padding: .7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-black-color);
+  color: var(--btn-back);
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  border-radius: 40px 40px 40px 0px;
+}
+.contact .all-input .icon-contact i{
+  transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+}
+.contact .all-input  i{
+  font-size: 26px;
+}
+.contact .all-input h5{
   font-size: 24px;
+  color: var(--dark-black-color);
   font-weight: bold;
-  color: var(--dark-grey-color);
 }
-  .box-services2 .btn-content i{
-  font-size: 32px;
-  font-weight: bold;
-  color: var(--dark-grey-color);
+.contact .all-input a{
+  font-size: 22px;
+  color: var(--grey-color);
+  font-weight: 500;
 }
-  .box-services2 .nav{
-  height: 200px;
-  overflow: auto;
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-  flex-wrap: nowrap;
-}
-  .box-services2 .nav button{
-  margin: 0px 0 !important;
-  color: var(--dark-grey-color);
-  gap: 1rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=======================================*/
 
@@ -464,30 +610,39 @@ section.main .controls .nav button i{
 .navbar-brand {
   font-size: 1.5rem;
 }
-.navbar form.form-control{
+.navbar .all-cont form.form-control{
   width: 100%;
     margin:1rem 0 1rem 0;
   }
-  .main .tab-content {
-    margin: 2rem 1rem 0 0rem !important;
+  .main .content {
+    margin: 0rem 0rem 0 0rem !important;
 }
-
-.tab-content{
+.container-fluid{
+  padding-right: calc(var(--bs-gutter-x) * .5) !important;
+}
+.content{
   margin-top: 30px;
 }
 .container .heading p{
   width: 100% !important;
 }
+.big-control{
+  position: relative;
+  width: 75% !important;
+}
 .controls{
-  display: none !important;
+  /* display: none !important; */
+  height: 100vh !important;
+  position: absolute;
+  right: -100%;top: 0vh;
+  width: 100% !important;
+  transition: .3s;
 }
-.box-services2 {
-  display: flex !important;
-  margin: 30px 0.4rem 30px 30px;
+.controls.active{
+  right: 0 !important;
+  transition: .3s;
 }
-.box-services2 button{
-  padding: 15px;
-}
+
 .nav-pills .nav-link{
   display: flex;
   flex-direction: row;
@@ -495,9 +650,34 @@ section.main .controls .nav button i{
 .container .nav-link .img-cont {
   padding: 10px 10px;
 }
+.main .content .report .report-header .form-select {
+  width: 35%;
+}
+.table>thead {
+  vertical-align: middle;
+}
+.main .nav-search .content form{
+  width: 100%;
+  display: flex !important;
+}
+.contact .all-input {
+  padding-right: .5rem;
+  width: 100%;
+  height: 90px;
+  background-color: var(--white-color);
+}
 
-
-
+.contact .all-input  i{
+  font-size: 18px;
+}
+.contact .all-input h5{
+  font-size: 17px;
+  font-weight: 600;
+}
+.contact .all-input a{
+  font-size: 18px;
+  font-weight: 400;
+}
 }
 
 
@@ -543,12 +723,22 @@ section.main .controls .nav button i{
 .sign-up .input-group{
   width: 100%;
 }
-.navbar form.form-control{
+.navbar .all-cont form.form-control{
 width: 100%;
   margin:1rem 0 1rem 0;
 }
 section.login-dashboard ,
 section.login-beneficiary{
     height: auto !important;
+}
+.table thead tr th {
+  color: var(--dark-grey-color);
+  font-size: 15px;
+}
+.icons{
+  gap: 2rem !important;
+}
+.contact {
+  margin-top: 0rem;
 }
 }

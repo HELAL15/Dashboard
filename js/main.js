@@ -1,5 +1,25 @@
 
 
+let toggler = document.getElementById('toggler');
+let controls = document.getElementById('controls');
+let open = document.querySelector('.navbar-toggler-icon');
+let close = document.querySelector('.fa-close');
+
+if(toggler != null){
+  toggler.addEventListener('click' , ()=>{
+    controls.classList.toggle('active');
+    open.classList.toggle('d-none');
+    close.classList.toggle('d-none');
+  })
+}
+
+
+
+
+
+
+
+
 let profile_photo = document.getElementById('profile-photo');
 let photo = document.getElementById('photo');
 let file = document.getElementById('file');

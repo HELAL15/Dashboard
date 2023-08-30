@@ -33,9 +33,11 @@
 
   <nav class="navbar navbar-expand-lg ">
     <div class="container d-flex justify-content-between align-items-center">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" id="toggler">
         <span class="navbar-toggler-icon"></span>
+        <span class="fas fa-close w-100 h-100 d-none" style="font-size: 32px !important;"></span>
+
       </button>
       <a class="navbar-brand" href="assoc-main.html">جمعيه</a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,7 +49,7 @@
           </form>
         </div>
       </div>
-      <div class="icons d-flex gap-3 align-items-center flex-row">
+      <div class="icons d-flex gap-5 align-items-center flex-row">
         <i class=" fas fa-earth-americas"></i>
         <i class="fas fa-bell"></i>
       </div>
@@ -57,274 +59,197 @@
   <section class="main">
     <div class="container-fluid">
       <di class="row">
-        <div class="col-lg-3">
-          <div class="  controls">
-            <div class="nav flex-column text-start nav-pills" id="v-pills-tab" role="tablist"
-              aria-orientation="vertical">
-              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i
-                  class="fa-solid fa-chart-simple"></i>الإحصائيات</button>
-              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i
-                  class="fa-solid fa-business-time"></i>الخدمات</button>
-              <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"
-                aria-selected="false"><i class="fa-solid fa-user"></i>المستفيدين</button>
-              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false"><i class="fa-solid fa-handshake"></i>الشركاء</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                aria-selected="false"><i class="fa-solid fa-user"></i>الملف الشخصي</button>
-              <button class="nav-link" id="v-pills-policies-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-policies" type="button" role="tab" aria-controls="v-pills-policies"
-                aria-selected="false"><i class="fa-solid fa-globe"></i>الشروط والأحكام</button>
-              <button class="nav-link" id="v-pills-rules-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rules"
-                type="button" role="tab" aria-controls="v-pills-rules" aria-selected="false"><i
-                  class="fa-solid fa-globe"></i>سياسة الخصوصية</button>
-              <button class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact"
-                type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false"><i
-                  class="fa-solid fa-address-book"></i>تواصل معنا</button>
+        <div class="col-lg-3 big-control">
+          <aside class="  controls" id="controls">
+            <div class="nav flex-column text-start nav-pills">
+              <a href="assoc-main.html" class="nav-link active"><i class="fa-solid fa-chart-simple"></i>الإحصائيات</a>
+              <a href="assoc-services.html" class="nav-link"><i class="fa-solid fa-business-time"></i>الخدمات</a>
+              <a href="assoc-benefits.html" class="nav-link"><i class="fa-solid fa-user"></i>المستفيدين</a>
+              <a href="assoc-partners.html" class="nav-link"><i class="fa-solid fa-handshake"></i>الشركاء</a>
+              <a href="profile.html" class="nav-link"><i class="fa-solid fa-user"></i>الملف الشخصي</a>
+              <a href="rules.html" class="nav-link"><i class="fa-solid fa-globe"></i>الشروط والأحكام</a>
+              <a href="policies.html" class="nav-link"><i class="fa-solid fa-globe"></i>سياسة الخصوصية</a>
+              <a href="contact-us.html" class="nav-link"><i class="fa-solid fa-address-book"></i>تواصل معنا</a>
             </div>
-          </div>
-          <div class="card w-100 text-center box-services2 ">
-            <button class="btn btn-primary d-flex justify-content-between align-items-center btn-content"
-              id="show-content">
-              <h3 class="d-flex gap-3"> <i class="fa-solid fa-chart-simple"></i>جمعيه</h3>
-              <i class="fa-sharp fa-solid fa-caret-down" id="down-up"></i>
-            </button>
-            <div class="nav flex-column nav-pills py-3  content d-none " id="v-pills-tab" role="tablist"
-              aria-orientation="vertical">
-              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i
-                  class="fa-solid fa-chart-simple"></i>الإحصائيات</button>
-              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i
-                  class="fa-solid fa-business-time"></i>الخدمات</button>
-              <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"
-                aria-selected="false"><i class="fa-solid fa-user"></i>المستفيدين</button>
-              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false"><i class="fa-solid fa-handshake"></i>الشركاء</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                aria-selected="false"><i class="fa-solid fa-user"></i>الملف الشخصي</button>
-              <button class="nav-link" id="v-pills-policies-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-policies" type="button" role="tab" aria-controls="v-pills-policies"
-                aria-selected="false"><i class="fa-solid fa-globe"></i>الشروط والأحكام</button>
-              <button class="nav-link" id="v-pills-rules-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rules"
-                type="button" role="tab" aria-controls="v-pills-rules" aria-selected="false"><i
-                  class="fa-solid fa-globe"></i>سياسة الخصوصية</button>
-              <button class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact"
-                type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false"><i
-                  class="fa-solid fa-address-book"></i>تواصل معنا</button>
-            </div>
-          </div>
+          </aside>
         </div>
-        <div class="col-lg-9">
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-              tabindex="0">
-              <div class="row g-4">
-                <div class="col-mg-12">
-                  <div class="static-title d-flex justify-content-between">
-                    <h3 class="">احصائيات الجمعية</h3>
+        <div class="col-lg-9 nav-search">
+          <div class="row g-4 content">
+            <div class="all-cont d-flex justify-content-between align-items-center w-100 ">
+              <form class="d-flex  align-items-center form-control" role="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="form-control " type="search" placeholder="كلمة البحث" aria-label="Search">
+                <i class="fa-solid fa-arrow-down-short-wide"></i>
+              </form>
+            </div>
+            <div class="col-mg-12">
+              <div class="static-title d-flex justify-content-between">
+                <h3 class="">احصائيات الجمعية</h3>
+
+                <div class="dropdown">
+                  <button
+                    class="btn-files btn btn-secondary dropdown-toggle d-flex alig-items-center justify-content-center gap-2"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="img">
                       <img src="images/user.png" alt="" class="">
                     </div>
-                  </div>
-                  <div class="report">
-                    <div class="report-header d-flex justify-content-between align-items-center">
-                      <h4>التقرير</h4>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected>اخر شهر</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div>
-                      <div id="chart"></div>
-                    </div>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button"><input class="dropdown-item"
+                          type="file">excel</button></li>
+                    <li><button class="dropdown-item" type="button"><input class="dropdown-item"
+                          type="file">excel</button></li>
+                    <li><button class="dropdown-item" type="button"><input class="dropdown-item"
+                          type="file">excel</button></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="report">
+                <div class="report-header d-flex justify-content-between align-items-center">
+                  <h4>التقرير</h4>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>اخر شهر</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div>
+                  <div id="chart">
+                    <img src="images/map.png" alt="" class="w-100">
                   </div>
                 </div>
-                <div class="col-md-7">
-                  <div class="all-for-table">
-                    <div class="header">
-                      <h4>المرجع</h4>
-                    </div>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>اسم الخدمة</th>
-                          <th>عدد المستفادين</th>
-                          <th>عدد الخدمات المنتهية</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>اسم الخدمة يكتب هنا</td>
-                          <td>3746</td>
-                          <td>45</td>
-                        </tr>
-                        <tr>
-                          <td>اسم الخدمة يكتب هنا</td>
-                          <td>3746</td>
-                          <td>45</td>
-                        </tr>
-                        <tr>
-                          <td>اسم الخدمة يكتب هنا</td>
-                          <td>3746</td>
-                          <td>45</td>
-                        </tr>
-                        <tr>
-                          <td>اسم الخدمة يكتب هنا</td>
-                          <td>3746</td>
-                          <td>45</td>
-                        </tr>
-                        <tr>
-                          <td>اسم الخدمة يكتب هنا</td>
-                          <td>3746</td>
-                          <td>45</td>
-                        </tr>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="all-for-table">
+                <div class="header">
+                  <h4>المرجع</h4>
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>اسم الخدمة</th>
+                      <th>عدد المستفادين</th>
+                      <th>عدد الخدمات المنتهية</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>اسم الخدمة يكتب هنا</td>
+                      <td>3746</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>اسم الخدمة يكتب هنا</td>
+                      <td>3746</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>اسم الخدمة يكتب هنا</td>
+                      <td>3746</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>اسم الخدمة يكتب هنا</td>
+                      <td>3746</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>اسم الخدمة يكتب هنا</td>
+                      <td>3746</td>
+                      <td>45</td>
+                    </tr>
 
-                      </tbody>
-                    </table>
-                  </div>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="all-for-details">
+                <div class="header">
+                  <h4>تفاصيل الجمعيات الاخرى</h4>
                 </div>
-                <div class="col-md-5">
-                  <div class="all-for-details">
-                    <div class="header">
-                      <h4>تفاصيل الجمعيات الاخرى</h4>
-                    </div>
-                    <div class="map">
-                      <img src="images/map.png" alt="" class="w-100">
-                    </div>
-                    <div class="assoc-names">
-                      <ul>
-                        <li class="d-flex justify-content-between align-items-center ">
-                          <div class="name d-flex gap-2 align-items-center">
-                            <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
-                          </div>
-                          <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center ">
-                          <div class="name d-flex gap-2 align-items-center">
-                            <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
-                          </div>
-                          <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center ">
-                          <div class="name d-flex gap-2 align-items-center">
-                            <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
-                          </div>
-                          <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center ">
-                          <div class="name d-flex gap-2 align-items-center">
-                            <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
-                          </div>
-                          <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center ">
-                          <div class="name d-flex gap-2 align-items-center">
-                            <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
-                          </div>
-                          <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="map">
+                  <img src="images/map.png" alt="" class="w-100">
+                </div>
+                <div class="assoc-names">
+                  <ul>
+                    <li class="d-flex justify-content-between align-items-center ">
+                      <div class="name d-flex gap-2 align-items-center">
+                        <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
+                      </div>
+                      <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center ">
+                      <div class="name d-flex gap-2 align-items-center">
+                        <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
+                      </div>
+                      <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center ">
+                      <div class="name d-flex gap-2 align-items-center">
+                        <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
+                      </div>
+                      <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center ">
+                      <div class="name d-flex gap-2 align-items-center">
+                        <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
+                      </div>
+                      <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center ">
+                      <div class="name d-flex gap-2 align-items-center">
+                        <i class="fa-regular fa-circle"></i>اسم الجمعية (المدينة)
+                      </div>
+                      <div class="number d-flex gap-2 align-items-center"><span> خدمة</span>25</div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class=" tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-              tabindex="0">gggggggggggg
-            </div>
-            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab"
-              tabindex="0">gggggggggggg</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
-              tabindex="0">gggggggggggg</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
-              tabindex="0">gggggggggggg</div>
-            <div class="tab-pane fade" id="v-pills-policies" role="tabpanel" aria-labelledby="v-pills-policies-tab"
-              tabindex="0">
-              <div class="header">
-                <h4>الشروط والأحكام</h4>
-              </div>
-              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
-                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
-                طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي
-                الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل
-                إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة
-                العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة،
-                وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
-                لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك
-                يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
-                محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي
-                وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum"
-                في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة
-                ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية
-                إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
-                الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
-                توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها
-                تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم
-                إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع
-                الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق
-                الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى
-                المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
-                يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن
-                استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من
-                برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت
-                بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين
-                ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات
-                الفكاهية إليها</p>
-            </div>
-            <div class="tab-pane fade" id="v-pills-rules" role="tabpanel" aria-labelledby="v-pills-rules-tab"
-              tabindex="0">
-              <div class="header">
-                <h4>سياسة الخصوصية</h4>
-              </div>
-              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
-                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
-                طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي
-                الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل
-                إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة
-                العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة،
-                وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
-                لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك
-                يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
-                محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي
-                وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum"
-                في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة
-                ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية
-                إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
-                الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
-                توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها
-                تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم
-                إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع
-                الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق
-                الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى
-                المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
-                يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن
-                استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من
-                برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت
-                بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين
-                ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات
-                الفكاهية إليها</p>
-            </div>
-            <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab"
-              tabindex="0">gggggggggggg</div>
           </div>
+
         </div>
     </div>
     </div>
-
   </section>
 
 
-
+  <!-- <div class="tab-pane fade" id="v-pills-rules" role="tabpanel" aria-labelledby="v-pills-rules-tab"
+  tabindex="0">
+  <div class="header">
+    <h4>سياسة الخصوصية</h4>
+  </div>
+  <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+    للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
+    طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي
+    الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل
+    إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة
+    العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة،
+    وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+    لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك
+    يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
+    محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي
+    وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum"
+    في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة
+    ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية
+    إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
+    توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها
+    تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم
+    إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع
+    الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق
+    الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى
+    المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
+    يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن
+    استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من
+    برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت
+    بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين
+    ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات
+    الفكاهية إليها</p>
+</div> -->
 
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->

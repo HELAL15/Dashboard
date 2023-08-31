@@ -324,7 +324,7 @@ section.main .controls .nav a {
 section.main .controls .nav a i{
   margin-left: .7rem;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.controls .nav-pills .nav-link.active,.controls .nav-pills .show>.nav-link {
   color: var(--black-color);
   background-color: var(--body-main-color);
   border-right: 10px solid var(--dark-black-color) !important;
@@ -557,24 +557,74 @@ section.main .controls .nav a i{
   font-size: 24px !important;
 }
 
+.profile{
+  background-color: var(--white-color);
+  border-radius: 13px;
+  
+}
 
+.profile .nav{
+  margin-bottom: 10rem !important;
+}
 
+.profile .nav-link {
+  padding: .5rem .8rem .5rem 0  !important;
+}
+.profile .nav button{
+  background-color: transparent;
+  border: none;
+  color: var(--grey-color);
+  font-size: 20px;
+  font-weight: 500;
+  transition: .3s;
+}
 
+.profile .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--dark-black-color);
+  background-color: transparent;
+}
+.personal-details input{
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 35px;
+}
 
+.personal-details .input{
+  padding: .2rem !important;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 35px;
+}
 
+.personal-details .input input{
+  opacity: 0;
+}
 
+.personal-details .form-control:focus {
+  border-color: var(--dark-black-color) !important;
+  box-shadow: unset;
+}
+.personal-details label{
+  font-size: 20px;
+  color: var(--dark-grey-color);
+  font-weight: 500;
+  margin-bottom: .7rem;
+}
+.personal-details .btn{
+  padding: .8rem 6rem !important;
+  border-radius: 35px !important;
+  background-color: var(--dark-black-color);
+  margin: 1rem 0 2rem 0;
 
+}
 
+.modal-header .btn-close {
+  margin: unset;
+}
 
-
-
-
-
-
-
-
-
-
+.modal-content {
+  background-color: var(--body-main-color);
+}
 
 
 
@@ -773,10 +823,18 @@ section.login-beneficiary{
   margin-top: 0rem;
 }
 .contact .img {
-  width: 60%;
-  height: 222px;
+  width: 70%;
+  height: 230px;
+  margin-left: 0;
 }
 section.main .controls {
   width: 85% !important;
+}
+.profile .nav {
+  margin-bottom: 1rem !important;
+}
+.personal-details .btn{
+  padding: .8rem 0rem !important;
+  width: 100% !important;
 }
 }

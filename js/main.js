@@ -2,7 +2,7 @@
 
 let toggler = document.getElementById('toggler');
 let controls = document.getElementById('controls');
-let open = document.querySelector('.navbar-toggler-icon');
+let open = document.querySelector('.fa-bars');
 let close = document.querySelector('.fa-close');
 
 if(toggler != null){

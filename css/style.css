@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-family: tajawal;
     text-decoration: none !important;
     list-style: none !important;
@@ -237,6 +237,22 @@ nav{
 .navbar-toggler {
   width: 60px;
   height: 40px;
+  border: none !important;
+  transition: .3s;
+}
+.navbar .fa-bars{
+  width: 100%;
+  height: 100%;
+  font-size: 32px !important;
+  transition: .3s;
+}
+.navbar .fa-bars{
+  transition: .3s;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 ;
 }
 .navbar-brand{
   font-size: 2rem;
@@ -298,12 +314,12 @@ section.main .controls .nav a {
   border: none;
   border-radius: 0 !important;
   color: var(--dark-grey-color);
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
-  padding: 0.6rem 1rem 0.6rem 0;
+  /* padding: 0.6rem 1rem 0.6rem 0; */
   transition: .3s;
   text-align: right;
-  margin: 0rem 0 0.5rem 0;
+  margin: 0rem 0 0.6rem 0;
 }
 section.main .controls .nav a i{
   margin-left: .7rem;
@@ -501,7 +517,7 @@ section.main .controls .nav a i{
 
 .contact .all-input{
   padding-right: 1rem;
-  width: 75%;
+  /* width: 75%; */
   height: 90px;
   background-color: var(--white-color);
 }
@@ -512,7 +528,7 @@ section.main .controls .nav a i{
   justify-content: center;
   align-items: center;
   background-color: var(--dark-black-color);
-  color: var(--btn-back);
+  color: var(--white-color);
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
   border-radius: 40px 40px 40px 0px;
 }
@@ -520,7 +536,7 @@ section.main .controls .nav a i{
   transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
 }
 .contact .all-input  i{
-  font-size: 26px;
+  font-size: 24px;
 }
 .contact .all-input h5{
   font-size: 24px;
@@ -528,13 +544,18 @@ section.main .controls .nav a i{
   font-weight: bold;
 }
 .contact .all-input a{
-  font-size: 22px;
+  font-size: 24px;
   color: var(--grey-color);
   font-weight: 500;
 }
 
-
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.contact .social a i{
+  font-size: 24px !important;
+}
 
 
 
@@ -661,22 +682,29 @@ section.main .controls .nav a i{
   display: flex !important;
 }
 .contact .all-input {
-  padding-right: .5rem;
-  width: 100%;
+  padding-right: .4rem;
+  /* width: 100%; */
   height: 90px;
   background-color: var(--white-color);
 }
 
 .contact .all-input  i{
-  font-size: 18px;
+  font-size: 12px;
 }
 .contact .all-input h5{
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
 }
 .contact .all-input a{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+}
+.contact .img {
+  width: 100%;
+  height: 210px;
+}
+section.main .controls {
+  width: 50% !important;
 }
 }
 
@@ -727,6 +755,9 @@ section.main .controls .nav a i{
 width: 100%;
   margin:1rem 0 1rem 0;
 }
+section.main .controls .nav a {
+  font-size: 20px;
+}
 section.login-dashboard ,
 section.login-beneficiary{
     height: auto !important;
@@ -740,5 +771,12 @@ section.login-beneficiary{
 }
 .contact {
   margin-top: 0rem;
+}
+.contact .img {
+  width: 60%;
+  height: 222px;
+}
+section.main .controls {
+  width: 85% !important;
 }
 }

@@ -255,6 +255,7 @@ nav{
   box-shadow: 0 0 0 ;
 }
 .navbar-brand{
+  margin-right: 0 !important;
   font-size: 2rem;
   font-weight: bold;
   color: var(--dark-grey-color);
@@ -625,17 +626,71 @@ section.main .controls .nav a i{
 .modal-content {
   background-color: var(--body-main-color);
 }
+.tab-pane .btn-primary{
+  border: none;
+  background-color: transparent;
+  color: var(--dark-black-color);
+  font-size: 24px;
+}
+.tab-pane .btn-primary:hover{
+  background-color: transparent;
+  color: var(--dark-black-color);
+}
 
+.tab-pane a.btn{
+  --bs-btn-padding-x: 0rem !important;
+  border: none;
+  background-color: transparent;
+  color: var(--grey-color);
+  font-size: 24px;
+}
+.tab-pane a.btn.active{
+  color: var(--dark-black-color);
+}
+ .services .service{
+  background-color: var(--white-color);
+}
+.tab-pane .services .service .img{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 .8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: var(--btn-back);
+  outline: 5px solid var(--dark-grey-color);
+}
+.tab-pane .services .service .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.tab-pane .services .service h3{
+  font-size: 20px;
+  color: var(--dark-black-color);
+  font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
+.tab-pane .services .service h5{
+  font-size: 18px;
+  color: var(--dark-black-color);
+}
+ .btns .btn{
+  --bs-btn-padding-x: 0 !important;
+  border: none !important;
+  background-color: transparent;
+  color: var(--grey-color);
+  font-size: 20px;
+}
+.btns .btn.stop{
+  color: var(--dark-black-color);
+}
+.btns .btn.delt{
+  color: red;
+}
 
 
 
@@ -756,6 +811,23 @@ section.main .controls .nav a i{
 section.main .controls {
   width: 50% !important;
 }
+
+.tab-pane .services .service .details.gap-4{
+gap: .7rem !important;
+}
+.tab-pane .services .service h5 {
+  font-size: 18px !important;
+}
+.tab-pane .links.gap-5 {
+  gap: 1rem !important;
+}
+.tab-pane a.btn{
+  font-size: 20px;
+}
+.tab-pane .btns{
+  display: flex;
+  margin-top: 1rem;
+}
 }
 
 
@@ -835,6 +907,9 @@ section.main .controls {
 }
 .personal-details .btn{
   padding: .8rem 0rem !important;
+  width: 100% !important;
+}
+.tab-pane .btns{
   width: 100% !important;
 }
 }

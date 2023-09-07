@@ -32,7 +32,7 @@
 
 
   <nav class="navbar navbar-expand-lg ">
-    <div class="container d-flex justify-content-between align-items-center">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
       <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation" id="toggler">
         <span class="fas fa-bars"></span>
@@ -65,7 +65,8 @@
               <a href="assoc-services.html" class="nav-link"><i class="fa-solid fa-business-time"></i>الخدمات</a>
               <a href="assoc-benefits.html" class="nav-link"><i class="fa-solid fa-user"></i>المستفيدين</a>
               <a href="assoc-partners.html" class="nav-link"><i class="fa-solid fa-handshake"></i>الشركاء</a>
-              <a href="profile.html" class="nav-link active"><i class="fa-solid fa-user"></i>الملف الشخصي</a>
+              <a href="personal-information.html" class="nav-link active"><i class="fa-solid fa-user"></i>الملف
+                الشخصي</a>
               <a href="rules.html" class="nav-link"><i class="fa-solid fa-globe"></i>الشروط والأحكام</a>
               <a href="policies.html" class="nav-link"><i class="fa-solid fa-globe"></i>سياسة الخصوصية</a>
               <a href="contact-us.html" class="nav-link"><i class="fa-solid fa-address-book"></i>تواصل معنا</a>
@@ -76,97 +77,19 @@
           <div class="row g-4 content ">
             <div class="col-md-4 col-lg-3">
               <div class="d-flex align-items-start w-100 profile">
-                <div class="nav flex-column nav-pills w-100 my-3  gap-3" id="v-pills-tab" role="tablist"
-                  aria-orientation="vertical">
-                  <button class="nav-link d-flex gap-2 aling-items-center " id="v-pills-home-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                    aria-selected="true"><i class="fas fa-user"></i>العلومات
-                    الشخصية</button>
-                  <button class="nav-link d-flex gap-2 aling-items-center" id="v-pills-profile-tab"
-                    data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
-                    aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-user"></i>تغيير كلمة
-                    المرور</button>
-                  <button class="nav-link d-flex gap-2 aling-items-center active" id="v-pills-disabled-tab"
-                    data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab"
-                    aria-controls="v-pills-disabled" aria-selected="false"><i class="fas fa-user"></i>خدماتي</button>
+                <div class="nav flex-column nav-pills w-100 my-3  gap-3">
+                  <a class="nav-link d-flex gap-2 aling-items-center "><i class="fas fa-user"></i>العلومات
+                    الشخصية</a>
+                  <a class="nav-link d-flex gap-2 aling-items-center"><i class="fas fa-user"></i>تغيير كلمة
+                    المرور</a>
+                  <a class="nav-link d-flex gap-2 aling-items-center active"><i class="fas fa-user"></i>خدماتي</a>
                 </div>
               </div>
             </div>
             <div class="col-md-8 col-lg-9">
               <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-                  tabindex="0">
-                  <div class="row gy-4 personal-details">
-                    <div class="col-md-6">
-                      <label for="associationName" class="label-form">اسم الجمعية</label>
-                      <input type="text" id="associationName" class="form-control" placeholder="ادخل اسم الجمعية">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="phoneNumber" class="label-form">رقم الجوال</label>
-                      <input type="text" id="phoneNumber" class="form-control" placeholder="ادخل رقم الجوال">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="city" class="label-form">المدينة</label>
-                      <input type="text" id="city" class="form-control" placeholder="ادخل اسم المدينة">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="area" class="label-form">المنطقة</label>
-                      <input type="text" id="area" class="form-control" placeholder="ادخل اسم المنطقة">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="password" class="label-form">الرقم السري</label>
-                      <input type="password" id="password" class="form-control" placeholder="ادخل الرقم السري">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="license" class="label-form">ترخيص الجمعية</label>
-                      <div class="input form-control w-100">
-                        <input type="file" id="license" class="  w-100">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="associationLicenseAttachment" class="label-form">مرفق ترخيص الجمعية</label>
-                      <div class="input form-control w-100">
-                        <input type="file" id="associationLicenseAttachment" class="  w-100">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="boardMembersAttachment" class="label-form">مرفق أعضاء مجلس الادارة</label>
-                      <div class="input form-control w-100">
-                        <input type="file" id="boardMembersAttachment" class="  w-100">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <label for="platformAuthorizationLetter" class="label-form">خطاب المفوض باستخدام المنصة</label>
-                      <div class="input form-control w-100">
-                        <input type="file" id="platformAuthorizationLetter" class="  w-100">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <button class="btn btn-dark">حفظ</button>
-                    </div>
-                  </div>
 
-                </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-                  tabindex="0">
-                  <div class="row gy-4 personal-details">
-                    <div class="col-md-12">
-                      <label for="currentpass" class="label-form">كلمة المرور الحالية</label>
-                      <input type="password" id="currentpass" class="form-control" placeholder=" كلمة المرور الحالية ">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="newpass" class="label-form">كلمة المرور الجديدة</label>
-                      <input type="password" id="newpass" class="form-control" placeholder="كلمة المرور الجديدة">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="repass" class="label-form">إعادة كتابة كلمة المرور</label>
-                      <input type="password" id="repass" class="form-control" placeholder="إعادة كتابة كلمة المرور">
-                    </div>
-                    <div class="col-md-12">
-                      <button class="btn btn-dark">حفظ</button>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="tab-pane fade show active" id="v-pills-disabled" role="tabpanel"
                   aria-labelledby="v-pills-disabled-tab" tabindex="0">
                   <div class="row  ">

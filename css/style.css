@@ -234,6 +234,9 @@ nav{
   background-color: var(--white-color);
   box-shadow: 0px 2px 6px #0000000A;
 }
+nav.navbar .container-fluid{
+  margin: 0 4rem;
+}
 .navbar-toggler {
   width: 60px;
   height: 40px;
@@ -281,7 +284,7 @@ nav{
   font-size: 18px;
   font-weight: 500;
   transition: .3s;
-  margin-right: 6rem;
+  margin-right: 14rem;
 }
 .form-control:focus {
   border-color: none;
@@ -332,10 +335,12 @@ section.main .controls .nav a i{
   /* padding: 0.5rem 6.6rem; */
 }
 
-.main .content {
+.main .content ,
+.content {
   margin: 1rem 2rem 0 2rem !important;
 }
-.main .content .static-title{
+.main .content .static-title ,
+ .content .header{
   align-items: center;
   margin-bottom: 1.5rem;
 }
@@ -344,7 +349,8 @@ section.main .controls .nav a i{
   font-weight: bold;
   color: var(--dark-grey-color);
 }
-.main .content .static-title .img{
+.main .content .static-title .img ,
+.content .header .img{
   width: 20px;
   height: 20px;
   display: flex;
@@ -390,7 +396,8 @@ section.main .controls .nav a i{
   cursor: pointer;
   border-radius: 29px;
 }
-.main .content .static-title .img img{
+.main .content .static-title .img img ,
+ .content .header .img img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -570,6 +577,9 @@ section.main .controls .nav a i{
 
 .profile .nav-link {
   padding: .5rem .8rem .5rem 0  !important;
+  color: var(--grey-color);
+  font-size: 24px;
+  font-weight: 500;
 }
 .profile .nav button{
   background-color: transparent;
@@ -637,7 +647,7 @@ section.main .controls .nav a i{
   color: var(--dark-black-color);
 }
 
-.tab-pane a.btn{
+.tab-pane a{
   --bs-btn-padding-x: 0rem !important;
   border: none;
   background-color: transparent;
@@ -692,6 +702,128 @@ section.main .controls .nav a i{
   color: red;
 }
 
+.main .content button.add-partner{
+  --bs-btn-border-width: 0 !important ;
+  background-color: var(--white-color);
+  border-radius: 29px;
+  font-size: 24px;
+  padding: 0 1rem;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.main .content button.add-partner:hover{
+  background-color:var(--grey-color);
+  color: var(--white-color);
+}
+
+.nav-partner{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  
+}
+.nav-partner a{
+  color: var(--grey-color);
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: .5rem;
+}
+.nav-partner a.active{
+  color: var(--dark-black-color);
+  border-right: 5px solid var(--dark-black-color);
+}
+
+.all-cont-partner{
+  background-color: var(--white-color);
+  border-radius: 15px;
+}
+.all-cont-partner .partner-info{
+  background-color: var(--body-main-color);
+  border-radius: 15px;
+  padding: 1.5rem 1rem;
+}
+.all-cont-partner .partner-info h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+.all-cont-partner .partner-info a{
+  color: var(--dark-black-color);
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline !important;
+}
+
+.all-cont-partner button{
+font-size: 20px;
+border: none;
+}
+.all-cont-partner button:active{
+  border: none !important;
+}
+.all-cont-partner  .accept{
+  color: green;
+}
+.all-cont-partner .accept:hover{
+  color: green !important;
+}
+.all-cont-partner  .reject{
+  color: red;
+}
+.all-cont-partner .reject:hover{
+  color: red !important;
+}
+
+.main .container-fluid .card{
+  border: none;
+  border-radius: 15px;
+  height: 100%;
+}
+.main .container-fluid .card .head h3{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 1rem 0 ;
+}
+.main .container-fluid .card .body h4{
+  font-size: 20px;
+}
+.main .container-fluid .card .body .name ,
+.main .container-fluid .card .body .area{
+  width: 75%;
+  background-color: var(--body-main-color);
+  padding: .7rem 1rem;
+  border-radius: 35px;
+}
+.main .container-fluid .card .body2{
+  overflow: auto;
+  height: 400px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-black-color);
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -713,7 +845,16 @@ section.main .controls .nav a i{
 /*=======================================*/
 
 /*media query*/
-
+@media (max-width : 1440px){
+  .navbar .all-cont form.form-control{
+    margin-right: 12rem;
+  }
+}
+@media (max-width : 1402px){
+  .navbar .all-cont form.form-control{
+    margin-right: 5rem;
+  }
+}
 @media (max-width: 768px){
 
 .login-beneficiary .input-group{
@@ -732,6 +873,9 @@ section.main .controls .nav a i{
   height: 330px;
   width: 300px;
   margin-bottom: 1rem;
+}
+nav.navbar .container-fluid{
+  margin: 0 1.5rem;
 }
 .navbar-brand {
   font-size: 1.5rem;
@@ -828,6 +972,9 @@ gap: .7rem !important;
   display: flex;
   margin-top: 1rem;
 }
+.profile .nav-link {
+  font-size: 20px;
+}
 }
 
 
@@ -873,6 +1020,9 @@ gap: .7rem !important;
 .sign-up .input-group{
   width: 100%;
 }
+nav.navbar .container-fluid{
+  margin: 0 0rem;
+}
 .navbar .all-cont form.form-control{
 width: 100%;
   margin:1rem 0 1rem 0;
@@ -911,5 +1061,12 @@ section.main .controls {
 }
 .tab-pane .btns{
   width: 100% !important;
+}
+.profile .nav-link {
+  font-size: 18px;
+}
+.main .container-fluid .card .body .name ,
+.main .container-fluid .card .body .area{
+  width: 50% !important;
 }
 }

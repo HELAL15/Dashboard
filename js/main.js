@@ -154,12 +154,12 @@ function createServiceElement(name, number, dateS, dateE, photoSrc) {
   service.innerHTML = `
     <div class="service py-4 px-3">
       <div class="row ">
-        <div class="col-md-8 d-flex flex-wrap align-items-center gap-4">
+        <div class="col-md-8 d-flex  align-items-center flex-wrap  ">
           <div class="img">
             <img src="${photoSrc}" alt="" class='photo'>
           </div>
           <h3>${name}</h3>
-          <div class="details d-flex gap-4 align-items-center">
+          <div class="details d-flex  align-items-center justify-content-between gap-3 me-3">
             <h5><span>${number}</span>متبقي</h5>
             <h5>${dateS}</h5>
             <h5>${dateE}</h5>

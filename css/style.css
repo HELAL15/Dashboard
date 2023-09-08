@@ -578,7 +578,7 @@ section.main .controls .nav a i{
 .profile .nav-link {
   padding: .5rem .8rem .5rem 0  !important;
   color: var(--grey-color);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 .profile .nav button{
@@ -640,7 +640,8 @@ section.main .controls .nav a i{
   border: none;
   background-color: transparent;
   color: var(--dark-black-color);
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .tab-pane .btn-primary:hover{
   background-color: transparent;
@@ -652,9 +653,10 @@ section.main .controls .nav a i{
   border: none;
   background-color: transparent;
   color: var(--grey-color);
-  font-size: 24px;
+  font-size: 18px;
+    font-weight: 500;
 }
-.tab-pane a.btn.active{
+.tab-pane a.active{
   color: var(--dark-black-color);
 }
  .services .service{
@@ -706,7 +708,7 @@ section.main .controls .nav a i{
   --bs-btn-border-width: 0 !important ;
   background-color: var(--white-color);
   border-radius: 29px;
-  font-size: 24px;
+  font-size: 20px;
   padding: 0 1rem;
   font-weight: 500;
   transition: .3s;
@@ -718,7 +720,7 @@ section.main .controls .nav a i{
 }
 
 .nav-partner{
-  margin-top: 3rem;
+  margin-top: .5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,7 +729,7 @@ section.main .controls .nav a i{
 }
 .nav-partner a{
   color: var(--grey-color);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   padding-right: .5rem;
 }
@@ -752,7 +754,7 @@ section.main .controls .nav a i{
 .all-cont-partner .partner-info a{
   color: var(--dark-black-color);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: underline !important;
 }
 
@@ -811,7 +813,9 @@ border: none;
   width: 12px;
 }
 
-
+.services{
+  margin-top: 0 !important;
+}
 
 
 
@@ -931,7 +935,7 @@ nav.navbar .container-fluid{
   display: flex !important;
 }
 .contact .all-input {
-  padding-right: .4rem;
+  padding-right: .2rem;
   /* width: 100%; */
   height: 90px;
   background-color: var(--white-color);
@@ -942,10 +946,10 @@ nav.navbar .container-fluid{
 }
 .contact .all-input h5{
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .contact .all-input a{
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 .contact .img {
@@ -966,7 +970,7 @@ gap: .7rem !important;
   gap: 1rem !important;
 }
 .tab-pane a.btn{
-  font-size: 20px;
+  font-size: 18px;
 }
 .tab-pane .btns{
   display: flex;
@@ -974,6 +978,25 @@ gap: .7rem !important;
 }
 .profile .nav-link {
   font-size: 20px;
+}
+.services .details{
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-right: 0 !important;
+}
+.tab-pane a {
+  font-size: 16px;
+  text-align: center;
+}
+.all-cont-partner .partner-info h3{
+  font-size: 18px;
+}
+.all-cont-partner .partner-info a{
+  font-size: 18px;
+}
+.all-cont-partner button {
+  font-size: 18px;
 }
 }
 
@@ -1059,14 +1082,36 @@ section.main .controls {
   padding: .8rem 0rem !important;
   width: 100% !important;
 }
-.tab-pane .btns{
+/* .tab-pane .btns{
   width: 100% !important;
-}
+} */
 .profile .nav-link {
   font-size: 18px;
 }
 .main .container-fluid .card .body .name ,
 .main .container-fluid .card .body .area{
   width: 50% !important;
+}
+.services .details{
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-right: 0 !important;
+}
+.all-cont-partner .partner-info {
+  padding: 1.5rem 0.7rem;
+}
+.all-cont-partner .partner-info a{
+  font-size: 16px;
+}
+.main .content button.add-partner {
+  font-size: 18px;
+  padding: 0 .7rem;
+}
+.nav-partner {
+  gap: 1.3rem;
+}
+.all-cont-partner.mx-3{
+  margin: 0 .1rem !important;
 }
 }

@@ -37,7 +37,6 @@
         aria-label="Toggle navigation" id="toggler">
         <span class="fas fa-bars"></span>
         <span class="fas fa-close w-100 h-100 d-none" style="font-size: 32px !important;"></span>
-
       </button>
       <a class="navbar-brand" href="assoc-main.html">جمعيه</a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,89 +57,74 @@
 
   <section class="main">
     <div class="container-fluid">
-      <di class="row">
+      <div class="row">
         <div class="col-lg-3 big-control">
           <aside class="  controls" id="controls">
             <div class="nav flex-column text-start nav-pills">
               <a href="assoc-main.html" class="nav-link"><i class="fa-solid fa-chart-simple"></i>الإحصائيات</a>
               <a href="assoc-services.html" class="nav-link"><i class="fa-solid fa-business-time"></i>الخدمات</a>
-              <a href="assoc-benefits.html" class="nav-link"><i class="fa-solid fa-user"></i>المستفيدين</a>
-              <a href="assoc-partners.html" class="nav-link active"><i class="fa-solid fa-handshake"></i>الشركاء</a>
-              <a href="personal-information.html" class="nav-link"><i class="fa-solid fa-user"></i>الملف الشخصي</a>
+              <a href="assoc-benefits.html" class="nav-link active"><i class="fa-solid fa-user"></i>المستفيدين</a>
+              <a href="assoc-partners.html" class="nav-link "><i class="fa-solid fa-handshake"></i>الشركاء</a>
+              <a href="personal-information.html" class="nav-link "><i class="fa-solid fa-user"></i>الملف
+                الشخصي</a>
               <a href="rules.html" class="nav-link"><i class="fa-solid fa-globe"></i>الشروط والأحكام</a>
               <a href="policies.html" class="nav-link"><i class="fa-solid fa-globe"></i>سياسة الخصوصية</a>
-              <a href="contact-us.html" class="nav-link "><i class="fa-solid fa-address-book"></i>تواصل معنا</a>
+              <a href="contact-us.html" class="nav-link"><i class="fa-solid fa-address-book"></i>تواصل معنا</a>
             </div>
           </aside>
         </div>
-        <div class="col-lg-9 ">
-          <div class="row g-4 content">
-            <div class="col-mg-12 d-flex justify-content-between d-flex align-items-center">
-              <div class="header d-flex ">
-                <h3>شركاؤنا</h3>
-                <div class="dropdown">
-                  <button
-                    class="btn-files btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-center gap-2"
-                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="img">
-                      <img src="images/user.png" alt="" class="">
-                    </div>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button"><input class="dropdown-item"
-                          type="file">excel</button></li>
-                    <li><button class="dropdown-item" type="button"><input class="dropdown-item"
-                          type="file">excel</button></li>
-                    <li><button class="dropdown-item" type="button"><input class="dropdown-item"
-                          type="file">excel</button></li>
-                  </ul>
+        <div class="col-lg-9 my-5">
+          <div class="row  ">
+            <div class="col-md-12">
+              <div class="form-container ">
+                <div class="header">
+                  <h2>تفاصيل عن المستفيد</h2>
                 </div>
-              </div>
-              <a href="add-partner.html" class="btn add-partner"><i class="fas fa-plus mx-1"></i>اضافة شريك
-              </a>
 
-            </div>
-            <div class="col-md-12  ">
-              <div class="nav-partner">
-                <a href="assoc-partners.html" class="active">شركاء حاليين</a>
-                <a href="waiting-partner.html" class="">شركاء قيد الانتظار</a>
+                <form action="" class=" my-5 ">
+                  <div class="row gy-4">
+                    <div class="col-lg-6">
+                      <div class="all-cont d-flex align-items-center w-100">
+                        <label for="name" class="form-label w-25">اسم المنطقة</label>
+                        <input type="text" class="form-control" id="name" placeholder="اسم المنطقة">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="all-cont d-flex align-items-center w-100">
+                        <label for="name1" class="form-label w-25">اسم المنطقة</label>
+                        <input type="text" class="form-control" id="name1" placeholder="اسم المنطقة">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="all-cont d-flex align-items-center w-100">
+                        <label for="area" class="form-label w-25"> المنطقة</label>
+                        <input type="text" class="form-control" id="area" placeholder=" المنطقة">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="all-cont d-flex align-items-center w-100">
+                        <label for="area1" class="form-label w-25"> المنطقة</label>
+                        <input type="text" class="form-control" id="area1" placeholder=" المنطقة">
+                      </div>
+                    </div>
+                    <div class="col-md-12 d-flex  justify-content-center">
+                      <button class="btn btn-dark">اضافة مستفيد</button>
+                    </div>
+                  </div>
+                </form>
+
               </div>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col-ld-12">
-              <div class="row all-cont-partner mx-3">
-                <div class="col-lg-12 my-3">
-                  <div class="partner-info d-flex justify-content-between align-items-center ">
-                    <h3>اسم الشريك</h3>
-                    <a href="partner-info.html">رؤيه الملف الشخصي للشريك</a>
-                  </div>
-                </div>
-                <div class="col-lg-12 my-3">
-                  <div class="partner-info d-flex justify-content-between align-items-center ">
-                    <h3>اسم الشريك</h3>
-                    <a href="partner-info.html">رؤيه الملف الشخصي للشريك</a>
-                  </div>
-                </div>
-                <div class="col-lg-12 my-3">
-                  <div class="partner-info d-flex justify-content-between align-items-center ">
-                    <h3>اسم الشريك</h3>
-                    <a href="partner-info.html">رؤيه الملف الشخصي للشريك</a>
-                  </div>
-                </div>
+        </div>
+      </div>
+    </div>
 
-              </div>
-            </div>
   </section>
 
 
 
 
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-  <!-- <script src="js/chart.js"></script> -->
   <!-- bootstrap js file -->
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

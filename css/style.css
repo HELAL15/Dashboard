@@ -240,7 +240,7 @@ nav.navbar .container-fluid{
   margin: 0 4rem;
 }
 .navbar-toggler {
-  width: 60px;
+  width: 1px;
   height: 40px;
   border: none !important;
   transition: .3s;
@@ -344,7 +344,7 @@ section.main .controls .nav a i{
 .main .content .static-title ,
  .content .header{
   align-items: center;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 .main .content .static-title h3{
   font-size: 24px;
@@ -428,12 +428,15 @@ section.main .controls .nav a i{
   height: 100%;
   box-shadow: 0px 2px 6px #0000000A;
 }
-.main .content  .header ,
-.main .content  .header{
-  font-size: 18px;
+/* .main .content  .header{
+  display: flex !important;
+  justify-content: center; 
+  align-items: center !important;
+} */
+.main .content  .header h3 {
+  font-size: 24px;
   color: var(--dark-grey-color);
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 .main .content   p{
   font-size: 18px;
@@ -887,11 +890,32 @@ border: none;
   color: var(--white-color);
 }
 
+.all-cont.benefits{
+  margin-right: 13rem;
+}
+.all-cont.benefits h4{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dark-grey-color);
+}
+.all-cont.benefits1{
+  margin-right: 0rem !important;
+  display: none !important;
+}
+.form-select {
+  padding: 0.375rem .5rem 0.375rem 0.75rem;
+  background-position: left 0.75rem center;
+  background-color: var(--btn-back);
+  border: none;
+}
+.form-select:focus{
+  border-color: none;
+  box-shadow: unset;
+}
 
-
-
-
-
+.services-assoc .form-select {
+  padding: 0.375rem 1.5rem 0.375rem 5.75rem;
+}
 
 
 
@@ -976,8 +1000,9 @@ nav.navbar .container-fluid{
   height: 100vh !important;
   position: absolute;
   right: -100%;top: 0vh;
-  width: 100% !important;
+  /* width: 100% !important; */
   transition: .3s;
+  max-height: calc(100vh - 8.3vh) !important;
 }
 .controls.active{
   right: 0 !important;
@@ -1024,7 +1049,7 @@ nav.navbar .container-fluid{
   height: 210px;
 }
 section.main .controls {
-  width: 50% !important;
+  width: 60% !important;
 }
 
 .tab-pane .services .service .details.gap-4{
@@ -1064,6 +1089,19 @@ gap: .7rem !important;
 }
 .all-cont-partner button {
   font-size: 18px;
+}
+.nav-partner a {
+  font-size: 16px;
+}
+.main .content  .header h3 {
+  font-size: 20px;
+}
+.all-cont.benefits1{
+  margin-right: 0rem !important;
+  display: flex !important;
+}
+.all-cont.benefits h4{
+  font-size: 16px;
 }
 }
 
@@ -1130,6 +1168,7 @@ section.login-beneficiary{
 }
 .icons{
   gap: 2rem !important;
+  margin-left: 9px;
 }
 .contact {
   margin-top: 0rem;
@@ -1140,7 +1179,7 @@ section.login-beneficiary{
   margin-left: 0;
 }
 section.main .controls {
-  width: 85% !important;
+  width: 100% !important;
 }
 .profile .nav {
   margin-bottom: 1rem !important;
@@ -1175,13 +1214,15 @@ section.main .controls {
   font-size: 13px;
 }
 .main .content a.add-partner {
-  font-size: 16px;
-  padding: 0 .7rem;
+  font-size: 15px;
 }
 .nav-partner {
   gap: 1.3rem;
 }
 .all-cont-partner.mx-3{
   margin: 0 .1rem !important;
+}
+.main .content  .header h3 {
+  font-size: 18px;
 }
 }

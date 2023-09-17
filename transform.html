@@ -40,28 +40,23 @@
 
       </button>
       <a class="navbar-brand" href="assoc-main.html">جمعيه</a>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <div class="all-cont d-flex justify-content-center align-items-center  w-50  benefits">
-          <div class="report-header d-flex  align-items-center  w-50 gap-3 ">
-            <h4 class="">النوع</h4>
-            <select class="form-select w-50" aria-label="Default select example">
-              <option selected>ذكر</option>
-              <option value="1">انثى</option>
-            </select>
-          </div>
-          <div class="report-header d-flex  align-items-center  w-50 gap-3 ">
-            <h4 class="">نوع الخدمه</h4>
-            <select class="form-select w-50" aria-label="Default select example">
-              <option selected>الخدمه</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-            </select>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="all-cont d-flex justify-content-between align-items-center w-100 ">
+          <form class="d-flex  align-items-center form-control" role="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="form-control " type="search" placeholder="كلمة البحث" aria-label="Search">
+            <i class="fa-solid fa-arrow-down-short-wide"></i>
+          </form>
         </div>
       </div>
+
+
       <div class="icons d-flex gap-5 align-items-center flex-row">
         <i class=" fas fa-earth-americas"></i>
-        <i class="fas fa-bell"></i>
+        <i class="fas fa-bell" id="notification"></i>
+        <div class="notification-container" id="notification-container">
+
+        </div>
       </div>
     </div>
   </nav>
@@ -73,8 +68,8 @@
           <aside class="  controls" id="controls">
             <div class="nav flex-column text-start nav-pills">
               <a href="assoc-main.html" class="nav-link"><i class="fa-solid fa-chart-simple"></i>الإحصائيات</a>
-              <a href="assoc-services.html" class="nav-link"><i class="fa-solid fa-business-time"></i>الخدمات</a>
-              <a href="assoc-benefits.html" class="nav-link active"><i class="fa-solid fa-user"></i>المستفيدين</a>
+              <a href="assoc-services.html" class="nav-link active"><i class="fa-solid fa-business-time"></i>الخدمات</a>
+              <a href="assoc-benefits.html" class="nav-link "><i class="fa-solid fa-user"></i>المستفيدين</a>
               <a href="assoc-partners.html" class="nav-link"><i class="fa-solid fa-handshake"></i>الشركاء</a>
               <a href="personal-information.html" class="nav-link"><i class="fa-solid fa-user"></i>الملف الشخصي</a>
               <a href="rules.html" class="nav-link"><i class="fa-solid fa-globe"></i>الشروط والأحكام</a>
@@ -84,27 +79,19 @@
           </aside>
         </div>
         <div class="col-lg-9 ">
-          <div class="all-cont d-flex justify-content-center align-items-center  my-4  benefits benefits1">
-            <div class="report-header d-flex justify-content-center  align-items-center  w-50 gap-3 ">
-              <h4 class="">النوع</h4>
-              <select class="form-select w-50" aria-label="Default select example">
-                <option selected>ذكر</option>
-                <option value="1">انثى</option>
-              </select>
-            </div>
-            <div class="report-header d-flex justify-content-center  align-items-center  w-50 gap-3 ">
-              <h4 class="">نوع الخدمه</h4>
-              <select class="form-select w-50" aria-label="Default select example">
-                <option selected>الخدمه</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-              </select>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="all-cont d-flex justify-content-between align-items-center w-100 ">
+              <form class="d-flex  align-items-center form-control" role="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="form-control " type="search" placeholder="كلمة البحث" aria-label="Search">
+                <i class="fa-solid fa-arrow-down-short-wide"></i>
+              </form>
             </div>
           </div>
           <div class="row g-4 content">
-            <div class="col-mg-12 d-flex justify-content-between d-flex align-items-center">
+            <div class="col-mg-12 d-flex justify-content-between d-flex align-items-center ">
               <div class="header d-flex ">
-                <h3>الاعضاء</h3>
+                <h3>الخدمات المطلوبة</h3>
                 <div class="dropdown">
                   <button
                     class="btn-files btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-center gap-2"
@@ -123,64 +110,73 @@
                   </ul>
                 </div>
               </div>
-              <a href="add-benefit.html" class="btn add-partner"><i class="fas fa-plus mx-1"></i>اضافة عضو
-              </a>
+              <div class="report-header d-flex  align-items-end  gap-3 services-assoc">
+                <h4 class="">تصفيه</h4>
+                <select class="form-select w-100" aria-label="Default select example">
+                  <option selected>طلبات جديدة</option>
+                  <option value="1">قيد التنفيذ</option>
+                  <option value="2">اعتذار</option>
+                  <option value="3">منتهية</option>
+                  <option value="4">خدمات محالة</option>
+                </select>
+              </div>
 
             </div>
             <div class="col-md-12">
-              <div class="row justify-content-center gy-3">
-                <div class="col-auto">
-                  <a href="assoc-benefits.html" class="btn btn-nav text-center">مستفيدون </a>
+              <div class="row justify-content-center service-nav  g-3">
+                <div class=" col-lg-2 col-auto">
+                  <a href="assoc-services.html" class="btn btn-nav text-center ">طلبات جديدة </a>
                 </div>
-                <div class="col-auto">
-                  <a href="assoc-member-benefit.html" class="btn btn-nav text-center  active">اعضاء </a>
+                <div class=" col-lg-2 col-auto">
+                  <a href="in-progress.html" class="btn btn-nav text-center ">قيد التنفيذ </a>
                 </div>
-                <div class="col-auto">
-                  <a href="assoc-employ-benefit.html" class="btn btn-nav text-center">موظفين </a>
+                <div class=" col-lg-2 col-auto">
+                  <a href="sorry.html" class="btn btn-nav text-center ">اعتذار </a>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-12  ">
-              <div class="nav-partner">
-                <a href="assoc-member-benefit.html" class="active">اعضاء حاليين</a>
-                <a href="waiting-member-assoc.html" class="">اعضاء قيد الانتظار</a>
+                <div class=" col-lg-2 col-auto">
+                  <a href="ended.html" class="btn btn-nav text-center ">منتهية </a>
+                </div>
+                <div class=" col-lg-2 col-auto">
+                  <a href="transform.html" class="btn btn-nav text-center active">خدمات محالة </a>
+                </div>
               </div>
             </div>
           </div>
           <div class="row mt-4">
             <div class="col-ld-12">
-              <div class="row all-cont-partner mx-3">
-                <div class="col-lg-12 my-3">
-                  <div class="partner-info d-flex justify-content-between align-items-center ">
-                    <h3>اسم العضو</h3>
-                    <a href="partner-info.html">رؤيه الملف الشخصي للعضو</a>
-                  </div>
-                </div>
-                <div class="col-lg-12 my-3">
-                  <div class="partner-info d-flex justify-content-between align-items-center ">
-                    <h3>اسم العضو</h3>
-                    <a href="partner-info.html">رؤيه الملف الشخصي للعضو</a>
-                  </div>
-                </div>
-                <div class="col-lg-12 my-3">
-                  <div class="partner-info d-flex justify-content-between align-items-center ">
-                    <h3>اسم العضو</h3>
-                    <a href="partner-info.html">رؤيه الملف الشخصي للعضو</a>
-                  </div>
-                </div>
+              <div class="row services-row ">
+                <div class="col-lg-12 my-2">
+                  <div class="all partner-info">
+                    <div class=" d-flex justify-content-between align-items-center flex-wrap">
+                      <div class="info d-flex align-items-center gap-3">
+                        <div class="img">
+                          <img src="images/user.png" alt="">
+                        </div>
+                        <h3>اسم الخدمه</h3>
+                        <h4>(محاله)</h4>
+                        <h5>اسم الجمعيه المحال منها</h5>
+                      </div>
+                      <div class="name">
+                        <a href="partner-info.html">اسم المستخدم</a>
+                      </div>
 
+                    </div>
+                    <h5 class="flex-row">12/10/2003</h5>
+                  </div>
+
+                  <div class="confirmation d-flex justify-content-center align-items-center gap-3 mt-3">
+                    <button class="btn accept">الموافقة</button>
+                    <button class="btn reject">الرفض</button>
+                    <button class="btn ">إحالة</button>
+                    <button class="btn ">عرض للجميع</button>
+                  </div>
+                </div>
               </div>
             </div>
   </section>
 
 
 
-
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-  <!-- <script src="js/chart.js"></script> -->
   <!-- bootstrap js file -->
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

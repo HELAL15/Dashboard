@@ -210,7 +210,9 @@ function add_service() {
   document.getElementById('addDateE').value = '';
 }
 
-addService.addEventListener('click', add_service);
+if(addService != null){
+  addService.addEventListener('click', add_service);
+}
 
 
 
